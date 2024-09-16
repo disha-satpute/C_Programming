@@ -13,7 +13,7 @@ int main(){
     return 0;
 }
 
-/*
+/* Executing Commands -
 *****************************************************************
 g++ -Iinclude -c ./src/math.c -o ./build/math.o
 g++ -Iinclude -c ./src/main.c -o ./build/main.o
