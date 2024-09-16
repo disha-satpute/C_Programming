@@ -6,5 +6,5 @@ struct line{
    point pt2 ;
 };
 
-void getLine(struct line line1,struct line line2);
+void getLine(struct line line1);
 
