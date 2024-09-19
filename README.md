@@ -14,4 +14,9 @@ When you write .h (header) and .c (source) files separately in C programming, th
 
 - Linking: Object files are linked together to produce an executable program.
 
-
+## ☑️Installation
+- Just, Clone this repository - 
+````bash 
+git clone //github.com/disha-satpute/C-Programming.git
+````
+- Open the project in your preferred IDE (e.g., Visual Studio code(mingw),codeblocks) and build the project.
