@@ -15,8 +15,25 @@ int main()
     line(100, 200, 500,200);
 
     //circle
-    circle(50,100,30);
-    
+    setcolor(BLUE);
+    circle(100,200,60);
+
+    //Square
+    setcolor(GREEN);
+    rectangle(100,100,200,200);
+
+    //rectangle
+    setcolor(WHITE);
+ rectangle(300, 200, 450, 300);
+
+    setcolor(YELLOW);
+
+    // Array of points: {x1, y1, x2, y2, x3, y3, x1, y1} (last point is to close the triangle)
+    int points[] = {150, 100, 100, 200, 200, 200, 150, 100};
+
+    // Draw the triangle
+    drawpoly(4, points);
+
     getch();
 
     // Close the graphics mode
