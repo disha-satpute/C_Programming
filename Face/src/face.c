@@ -1,7 +1,6 @@
 
 #include <graphics.h>
-#include <conio.h>
-#include<dos.h> // For getch()
+#include <conio.h> // For getch()
 
 int main()
 {
@@ -15,13 +14,13 @@ int main()
     circle(300,250,200);
 
     //Eyes
+    setcolor(WHITE);
       circle(230,200,40);
        circle(380,200,40);
 
     ellipse(300, 330, 210, 335, 90, 30);
     ellipse(300, 330, 210, 335, 90, 31);
     ellipse(300, 330, 210, 335, 90, 32);
-
 
     getch();
 
