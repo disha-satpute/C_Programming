@@ -16,7 +16,7 @@ int main()
     //Eyes
     setcolor(WHITE);
       circle(230,200,40);
-       circle(380,200,40);
+      circle(380,200,40);
 
     ellipse(300, 330, 210, 335, 90, 30);
     ellipse(300, 330, 210, 335, 90, 31);
