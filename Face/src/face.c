@@ -1,4 +1,3 @@
-
 #include <graphics.h>
 #include <conio.h> // For getch()
 
@@ -28,8 +27,6 @@ int main()
     closegraph();
     return 0;
 }
-
-
 
 //in detail commands for creating ext
 
