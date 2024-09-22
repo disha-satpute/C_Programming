@@ -11,6 +11,7 @@ int main() {
     int radius = 90;
     int color = 1;
     while (!kbhit()) {
+
         setcolor(color);
         circle(x, y, radius);
         delay(50);

@@ -8,7 +8,7 @@ int main()
     initgraph(&gd, &gm, "");
 
     // Set color and draw a line
-    setcolor(YELLOW);
+    setcolor(WHITE);
 
     //Horizontal
     line(120, 150, 320,150);
@@ -16,6 +16,7 @@ int main()
     line(120, 250, 320,250);
     line(120, 300, 320,300);
     line(120, 350, 320,350);
+    
 
 // Vertical
     line(120, 150, 120,350);
@@ -23,10 +24,6 @@ int main()
     line(220, 150, 220,350);
     line(270, 150, 270,350);
     line(320, 150, 320,350);
-     /*   line(120, 20, 120,100);
-        line(140, 20, 140,100);
-        line(160, 20, 160,100);
-        line(180, 20, 180,100);*/
 
 
      getch();
@@ -37,8 +34,6 @@ int main()
     return 0;
 }
 
-//one command for creating exe
-// g++ -o output  main.c -l bgi -l gdi32 -l comdlg32 -l uuid -l ole32 -l oleaut32
 
 //indetail commands for creating ext
 
