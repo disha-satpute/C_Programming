@@ -10,7 +10,8 @@ int main(){
  int row,col;
 	  int x1,y1,x2,y2;
 
-   while(!kbhit()){
+   while(!kbhit())
+   {
     x1=100,y1=150, x2=620,y2=150;
 	  for(row=0;row<=8;row++)
 	  {
