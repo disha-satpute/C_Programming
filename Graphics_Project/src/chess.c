@@ -19,7 +19,7 @@ int main(){
 		  setcolor(WHITE);
 		  line(x1,y1,x2,y2);
 	  }
-	  x1=120,y1=150, x2=120,y2=650;
+	  x1=120,y1=150, x2=120,y2=450;
 	  for(col=0;col<=8;row++)
 	  {
           x1=x1+50;
