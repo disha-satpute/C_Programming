@@ -41,7 +41,6 @@ int main()
     return 0;
 }
 
-//one command for creating exe
 // g++ -o output  line.c -l bgi -l gdi32 -l comdlg32 -l uuid -l ole32 -l oleaut32
 
 //indetail commands for creating ext
