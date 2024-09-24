@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #include <stdbool.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 // variables declared outside of main function are called  global variables
 int runs = 670;
@@ -67,7 +67,6 @@ int main()
 /*
 Build process of C Project
 
-g++ -Iinclude -c ./src/handler.c -o ./build/handler.o
-g++ -Iinclude -c ./src/main.c -o ./build/main.o
-g++ ./build/handler.o ./build/main.o  -o ./build/output.exe
+g++ -Iinclude -c ./src/pointer.c -o ./build/pointer.o
+g++ ./build/pointer.o   -o ./build/output.exe
 */
