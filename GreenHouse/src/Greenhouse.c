@@ -20,7 +20,7 @@ struct ClimateControl acceptClimateData(float t, int h, int l, bool f) {
 }
 
 void displayClimate(struct ClimateControl c) {
-    printf("Temperature: %f\n", c.temp);
+    printf("Temperature: %0.2f\n", c.temp);
     printf("Humidity: %d\n", c.humidity);
     printf("Light: %d\n", c.light);
     printf("Fan Status: %s\n", c.fanstatus ? "On" : "Off");
@@ -40,5 +40,5 @@ int main() {
 Build process of C Project
 
 g++ -Iinclude -c ./src/Greenhouse.c -o ./build/Greenhouse.o
-g++ ./build/Greenhouse.o ./build/Greenhouse.o  -o ./build/output.exe
+g++ d ./build/Greenhouse.o  -o ./build/output.exe
 */
