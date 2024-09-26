@@ -1,43 +1,7 @@
+#include "../include/ClimateControl.h"
 #include <stdio.h>
-#include <stdbool.h> 
+#include <stdbool.h>
 
-
-struct ClimateControl {
-    float temp;
-    int humidity;
-    int light;
-    bool fanstatus;
-};
-
-
-struct ClimateControl acceptClimateData(float t, int h, int l, bool f) {
-    struct ClimateControl climate;
-    climate.temp = t;
-    climate.humidity = h;
-    climate.light = l;
-    climate.fanstatus = f;
-    return climate;
-}
-
-void displayClimate(struct ClimateControl c) {
-    printf("Temperature: %0.2f\n", c.temp);
-    printf("Humidity: %d\n", c.humidity);
-    printf("Light: %d\n", c.light);
-    printf("Fan Status: %s\n", c.fanstatus ? "On" : "Off");
-}
-
-void TurnFanOn(*climate){
-    
-}
-void TurnFanOff(){
-
-}
-void getTemp(){
-
-}
-void setTemp(){
-
-}
 int main() {
 
     struct ClimateControl climate = acceptClimateData(24.4, 54, 34, false);
@@ -47,10 +11,11 @@ int main() {
 }
 
 
-
 /*
 Build process of C Project
 
-g++ -Iinclude -c ./src/Greenhouse.c -o ./build/Greenhouse.o
-g++ d ./build/Greenhouse.o  -o ./build/output.exe
+g++ -Iinclude -c ./src/ClimateControl.c -o ./build/ClimateControl.o
+g++ -Iinclude -c ./src/main.c -o ./build/main.o
+g++ ./build/ClimateControl.o ./build/main.o -o ./build/output.exe
+
 */
