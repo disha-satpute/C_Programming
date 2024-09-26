@@ -7,7 +7,7 @@ int main() {
     int gd = DETECT, gm;
 
     // Initialize graphics mode
-    initgraph(&gd, &gm, nullptr); // Using nullptr instead of ""
+    initgraph(&gd, &gm,""); // Using nullptr instead of ""
 
     // Check if mouse is detected
     int mouseDetected = detectmouse();
