@@ -26,6 +26,18 @@ void displayClimate(struct ClimateControl c) {
     printf("Fan Status: %s\n", c.fanstatus ? "On" : "Off");
 }
 
+void TurnFanOn(*climate){
+    
+}
+void TurnFanOff(){
+
+}
+void getTemp(){
+
+}
+void setTemp(){
+
+}
 int main() {
 
     struct ClimateControl climate = acceptClimateData(24.4, 54, 34, false);
