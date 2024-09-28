@@ -18,21 +18,3 @@ void displayClimate(struct ClimateControl c) {
     printf("Fan Status: %s\n", c.fanstatus ? "On" : "Off");
 }
 
-void turnFanOn(struct ClimateControl *climate) {
-    climate->fanstatus = true;
-    printf("Fan is turned ON\n");
-}
-
-void turnFanOff(struct ClimateControl *climate) {
-    climate->fanstatus = false;
-    printf("Fan is turned OFF\n");
-}
-
-float getTemperature(struct ClimateControl climate) {
-    return climate.temp;
-}
-
-void setTemperature(struct ClimateControl *climate, float newTemp) {
-    climate->temp = newTemp;
-    printf("Temperature set to: %f\n", climate->temp);
-}

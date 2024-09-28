@@ -1,26 +1,11 @@
 #include "../include/ClimateControl.h"
 #include <stdio.h>
-#include <stdbool.h>
 
 int main() {
 
     struct ClimateControl climate = acceptClimateData(24.4, 54, 34, false);
     displayClimate(climate);
 
-    turnFanOn(&climate);
-
-
-    setTemperature(&climate, 28.0);
-
-
-    float currentTemp = getTemperature(climate);
-    printf("Current Temperature: %f\n", currentTemp);
-
-
-    turnFanOff(&climate);
-
-
-    displayClimate(climate);
     return 0;
 }
 
