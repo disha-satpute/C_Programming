@@ -12,6 +12,7 @@ struct ClimateControl acceptClimateData(float t, int h, int l, bool f) {
 }
 
 void displayClimate(struct ClimateControl c) {
+
     printf("Temperature: %0.2f\n", c.temp);
     printf("Humidity: %d\n", c.humidity);
     printf("Light: %d\n", c.light);
