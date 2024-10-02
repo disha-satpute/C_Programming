@@ -74,7 +74,7 @@ int main()
 
     struct ClimateControl readings[MAX_READINGS];
 
- 
+
     // struct ClimateControl readings[3];
         for(int i=0;i<MAX_READINGS;i++){
                 accept(& readings[i]);
@@ -86,10 +86,10 @@ int main()
             display(readings[i]);
         }
 
-   
-    return 0;        
+
+    return 0;
 }
 /*
 g++ -Iinclude -c ./src/sample1.c -o ./build/sample1.o
-g++ ./build/sample.o -o ./build/output.exe
+g++ ./build/sample1.o -o ./build/output.exe
 */
