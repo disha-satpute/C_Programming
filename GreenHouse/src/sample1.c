@@ -89,4 +89,6 @@ int main()
    
     return 0;        
 }
-// g++ -o output  climatecontrol.c
+
+g++ -Iinclude -c ./src/sample.c -o ./build/sample.o
+g++ ./build/sample.o -o ./build/output.exe
