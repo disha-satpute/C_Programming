@@ -89,6 +89,7 @@ int main()
    
     return 0;        
 }
-
-g++ -Iinclude -c ./src/sample.c -o ./build/sample.o
+/*
+g++ -Iinclude -c ./src/sample1.c -o ./build/sample1.o
 g++ ./build/sample.o -o ./build/output.exe
+*/
