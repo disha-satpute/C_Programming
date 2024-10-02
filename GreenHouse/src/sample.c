@@ -97,7 +97,6 @@ int main() {
 
 
 /*
-Build process of C Project
 
 g++ -Iinclude -c ./src/sample.c -o ./build/sample.o
 g++ ./build/sample.o -o ./build/output.exe
