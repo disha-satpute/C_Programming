@@ -6,7 +6,6 @@ The flow of how .h (header files), .c (source files), and .o (object files) work
 
 When you write .h (header) and .c (source) files separately in C programming, this practice is known as **modular programming** or **separation of interface and implementation.**
 
-
 - .h files (header files) declare functions, data structures, and macros to be used in multiple source files.
 - .c files (source files) contain the actual code and include the .h files to use the declared functions and data structures.
 - .o files (object files) are created by compiling the .c files. These files contain the compiled machine code.
