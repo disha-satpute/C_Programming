@@ -12,7 +12,7 @@ When you write .h (header) and .c (source) files separately in C programming, th
 - .exe files (Executable file) is the final output of our code.
 
 - Linking: Object files are linked together to produce an executable program.
-  
+
 ## ☑️Implementation
 - Just, Clone this repository -
 ````bash
