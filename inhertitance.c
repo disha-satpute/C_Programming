@@ -10,29 +10,16 @@ using namespace  std;
 // 2. Inheritance----------------is a relationship
 
 /*
-Inheritance: 
+Inheritance:
 Manager inherits from Employee, reusing its functionality and adding its own.
 
 Method Overriding: The Manager class overrides the ComputePay() method to calculate the manager's pay differently (with a bonus).
-
-Polymorphism: We use a virtual method (ComputePay) in the base class, which is overridden in the derived class.
- When we call ComputePay() on an object, 
- the appropriate version of the function is invoked depending on the object's type 
- (i.e., Employee or Manager).
-*/
-
-/*
-In C++, inheritance allows you to create a base class that contains common functionality and then 
-create derived classes that extend or modify this functionality. 
-
-In this example, we'll create an Employee class and a Manager class, 
-where the Manager class inherits from Employee and overrides or extends the behavior of the ComputePay method.
 
 */
 
 
 class Date {
-	private : 
+	private :
 		int day,  month, year;
 	public :
 		Date(int d, int m, int y):day(d),month(m),year(y) {}
@@ -104,14 +91,14 @@ class Director:public Employee{
 		  	return package;
 		  }
 };
- 
+
  class CEO:public Employee {
 	private:
 		 double  monthlyIncentive;
 
 	public :
 			CEO(string mgrName, double mgrBasicSalary, int days, double da, double  incentive):Employee(mgrName,mgrBasicSalary,days, da){	
-				this->monthlyIncentive=incentive;	
+				this->monthlyIncentive=incentive;
 			}
 		//form
 		 double ComputePay() override{
@@ -123,22 +110,20 @@ class Director:public Employee{
 
 int main(){
 
-	Employee emp1("Sachin Pande",15000,25,500);
+	Employee emp1("DISHA SATPUTE",15000,25,500);
 	double result=emp1.ComputePay();
 	cout<< "\n Employee Salary="<<result;
 
-	Manager mgr1= Manager("Seeta Kumari",23000, 25, 1000,3000);
+	Manager mgr1= Manager("SANIKA BHOR",23000, 25, 1000,3000);
 	double mgrResult=mgr1.ComputePay();
 	cout<< "\n Manager Salary="<<mgrResult;
 
-	Employee *pEmployee = new Manager("Chadra Babu",33000, 20, 1500,8000);
-	Employee *pEmployee2=  new Director("Sagar Patil",56000, 25, 2000,56000);
-	Employee *pEmployee3=  new CEO("Satya Nadela",89000,20,15000,7860000);
+	Employee *pEmployee = new Manager("PRADNYA GADE",33000, 20, 1500,8000);
+	Employee *pEmployee2=  new Director("KIRTI KALE",56000, 25, 2000,56000);
+	Employee *pEmployee3=  new CEO("NIKITA SANE",89000,20,15000,7860000);
 
 	//Polymorphism: invoking the behaviour of  overriable method which belong to class , whose object is created.
-   // it invokes the method belong to the class whose objects is created.
 
-   //Here polymorphism worked
 	cout<< "\n Employee Salary="<<pEmployee->ComputePay()<< endl;   // form of Manager.computepay
 	cout<< "\n Employee Salary="<<pEmployee2->ComputePay()<< endl;  //fors of Director.ComputePay
 	cout<< "\n Employee Salary="<<pEmployee3->ComputePay()<< endl;  //form of CEO.ComputePay
@@ -146,17 +131,7 @@ int main(){
 }
 
 // Relationship between classes  defiend using two ways
-// 1.Association (Containment, composition):  has a relationship   
-//			  Date  ( day, month, year)-------class
-//			  Employee ( string name ,
-//						  dobule basicSalary,
-//						  int workingDays ,
-//						  double dailyAllowance,
-//						  Date	  joinDate)  --class
-
-//            Employee has a Date
-
- 
+// 1.Association (Containment, composition):  has a relationship
 // 2.Inheritance :  is a realtionship
 //   Employee class
 //   Manager class
@@ -180,7 +155,3 @@ int main(){
 // There are two types of classes
 //  one class is called abstract class  ( we can not create object from a class)
 //  another type of class is called  concrete class ( we can create object from class)
-//  Animal------- walk   (virtual)-----------Abstract class-------Walk() .............. Super class
-//  Humanbeing is  Animal--------concrete class-------Walk ()  override{ walking logic is differnt--walk straight using two legs}
-//  Elephant  is Animal----------concrete class-------Walk()  override { walking logic is diffent ---walking using four legs}
-//  Kangaroo  is Animal----------concrete class-------Walk()  override { walking logic is  diffent----jumping }
