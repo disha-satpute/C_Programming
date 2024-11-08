@@ -65,7 +65,7 @@ class Manager:public Employee {
 			}
 
 			//Method overrriding :Changing the behavious of parent class method in derived class
-			// form
+
 			double  ComputePay() override   {
 			  	cout<<"\n Manager ComputePay is called...";
 			 	double package=basicSalary + (workingDays * dailyAllowance) + bonus;
