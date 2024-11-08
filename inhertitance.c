@@ -133,16 +133,6 @@ int main(){
 // Relationship between classes  defiend using two ways
 // 1.Association (Containment, composition):  has a relationship
 // 2.Inheritance :  is a realtionship
-//   Employee class
-//   Manager class
-//  Every manager is an Employee
-//  Manager class is inherited from Employee
-//  class Manager: public Employee
-
-// Parent Class :Employee
-// Common data members will be defined inside Employee  (general)
-
-
 
 //Why we go for inheritnace: reusibility
 //Inheritnace also allows us to implement Polymorphsim
