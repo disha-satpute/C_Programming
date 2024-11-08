@@ -68,15 +68,15 @@ class Employee {
 
 //Derived Class  : is a relationship
 class Manager:public Employee {
-	
-	private: 
-			double bonus;		
+
+	private:
+			double bonus;
 	public:
 		    //Member Initialized List
 			Manager(string mgrName, double mgrBasicSalary, int days, double da, double incentive):Employee(mgrName,mgrBasicSalary,days, da){	
-				this->bonus=incentive;	
+				this->bonus=incentive;
 			}
-						
+
 			//Method overrriding :Changing the behavious of parent class method in derived class
 			// form
 			double  ComputePay() override   {
@@ -90,12 +90,12 @@ class Director:public Employee{
 	private:
 		 int shareholding;
 		 int earningPerShare;
-		 
+
 	public :
-			Director(string mgrName, double mgrBasicSalary, int days, double da, int  shares):Employee(mgrName,mgrBasicSalary,days, da){	
-				this->shareholding=shares;	
+			Director(string mgrName, double mgrBasicSalary, int days, double da, int  shares):Employee(mgrName,mgrBasicSalary,days, da){
+				this->shareholding=shares;
 				this->earningPerShare=10;
-	
+
 			}
 		//form
 		 double ComputePay() override{
