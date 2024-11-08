@@ -147,7 +147,7 @@ int main(){
 //Why we go for inheritnace: reusibility
 //Inheritnace also allows us to implement Polymorphsim
 
-//Polymorphism   ?
+//Polymorphism ?
 // means, the ability of something to take multiple forms.
 // means ability of a single function, method, or object  behave differently  depending
 // on the context   or type os data it's working.
